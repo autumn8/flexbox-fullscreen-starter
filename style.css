@@ -1,0 +1,65 @@
+:root {  
+  --app-bg : purple;
+  --header-bg: #1e90ff;
+  --footer-bg: orange;
+  --nav-bg: green;
+  --content-bg: cyan;
+  --aside-bg: yellow;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.app { 
+  display:flex;
+  flex-direction:column; 
+  background-color: var(--app-bg);
+  height: 100vh;
+  height: calc(var(--vh) * 100);
+}
+
+.wrapper > * {
+  padding:10px;
+}
+
+.content {
+  flex-grow:1;
+}
+
+.header, .footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;  
+}
+
+.header {
+  background-color: var(--header-bg);
+}
+
+.footer {
+  background-color: var(--footer-bg);
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.nav, aside {
+  width: 100px;
+}
+
+.nav {  
+  background-color: var(--nav-bg);
+}
+
+.aside {
+  background-color: var(--aside-bg);
+}
+
+.wrapper {
+  flex-grow: 1;
+  display:flex;
+}
